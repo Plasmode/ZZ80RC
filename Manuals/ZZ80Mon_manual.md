@@ -154,7 +154,7 @@ Physical location of programs on 512K RAM:
 * Drive A: 0x10000-0x3BFFF
 * Drive B: 0x40000-0x7FFFF
 
-With MMU turned on:
+With MMU turned on:  
     - logical page 0 is 0x3C000-0x3CFFF
     - logical page 1 is 0x1000-0x1FFF
     - logical page 2 is 0x2000-0x2FFF
