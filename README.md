@@ -36,7 +36,7 @@ Gerber [photoplots](zz80rc_rev0.zip), the pc board was manufactured by Seeed Stu
 
 Engineering Changes, ← no engineering changes so far.
 
-Build log
+[Build log](Manuals/ZZ80RC_construction_log.md)
 ### Software
 
 * UART Bootstrap software, LoadnGo.run, loads the 256-byte bootstrap first which, in turn, loads ZZ80Mon and transfer control to it. If TeraTerm is the terminal software, set the serial port transmission delay to 1 msec/line and check the 'Binary' box in 'Send file…' menu. The transmission delay and checked Binary box are necessary only for loading LoadnGo.run. All subsequent file loads are with zero transmission delay and Binary box unchecked.
@@ -50,9 +50,8 @@ Build log
 * CPM22DRI is system files for CP/M2.2. Use ZZ80Mon to load it into RAM disk A: It includes the XMODEM.COM file transfer program. CPM22DRI image is created using cpmtools.
 ### Manuals
 
-* Getting Started guide
-
-ZZ80Mon operating manual
+* [Getting Started](Manuals/GettingStartedGuide.md) guide
+* ZZ80Mon [operating manual](Manuals/ZZ80Mon_manual.md)
 ### References
 
 * Z280 Preliminary Technical Manual. This 'preliminary' manual is in fact the latest manual available.
