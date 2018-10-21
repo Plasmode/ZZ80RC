@@ -3,12 +3,10 @@
 Aug 2018
 ## Introduction
 
-
 ZZ80Mon is the monitor program for ZZ80RC. Once installed in physical page 0, it is the program Z280 executes immediately after reset. ZZ80Mon will first copies itself to 0xB000-0xBFFF and jump to 0xB400. It then enables the MMU and maps physical page 0x3C000 to logical page 0 thus protects the physical page 0 from alteration. It then display a command prompt for user inputs. The MMU is disabled with power-on reset or manual reset, so Z280 will always boot from physical page 0.
 
 When ZZ80RC board is powered up the very first time, the Bootstrap jumper should be set to T10-T11 to enable UART bootstrap mode. In this mode ZZ80Mon can be loaded into memory using procedure outlined in Getting Started guide. Once ZZ80Mon is installed, the Bootstrap jumper should be set to T9-T10 for RAM bootstrap mode.
 ## ZZ80Mon commands
-
 
 ZZMon is a simple monitor with the following single-key commands. Except when noted, the commands may be entered in upper or lower cases. In the following description, command entered is in bold, the response is in `code section`
 
@@ -76,8 +74,8 @@ read RAMdisk track:0x00 sector:0x00 data not same as previous read
 ```
 The address field in the first column is that of the buffer where sector data is stored.
 
-**D**
-display memory from 4 hexadecimal digits start address to 4 hexadecimal end address. If start address is greater than the end address, only 1 line (16 bytes) of data will be displayed.
+**D**  
+Display memory from 4 hexadecimal digits start address to 4 hexadecimal end address. If start address is greater than the end address, only 1 line (16 bytes) of data will be displayed.
 ```
 D 0400 0420
 
@@ -106,7 +104,7 @@ press Return to execute command
 ```
 Test memory from 0xC000 to 0xFFFE and from 0x0 to 0xAFFF. The memory is filled with unique test patterns generated from a seed value. The seed value is changed for each iteration of the test. Each completed iteration will display an 'OK' message. Any keystroke during the test with abort the test and return to command prompt.
 
-**E**
+**E**  
 Edit memory specified with the 4 hexadecimal digits value. Exit the edit session with 'X'
 ```
 E 0000
@@ -156,8 +154,7 @@ Physical location of programs on 512K RAM:
 * Drive A: 0x10000-0x3BFFF
 * Drive B: 0x40000-0x7FFFF
 
-With MMU turned on,
-
+With MMU turned on:
     - logical page 0 is 0x3C000-0x3CFFF
     - logical page 1 is 0x1000-0x1FFF
     - logical page 2 is 0x2000-0x2FFF
