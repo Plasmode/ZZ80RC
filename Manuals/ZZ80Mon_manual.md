@@ -8,7 +8,7 @@ ZZ80Mon is the monitor program for ZZ80RC. Once installed in physical page 0, it
 When ZZ80RC board is powered up the very first time, the Bootstrap jumper should be set to T10-T11 to enable UART bootstrap mode. In this mode ZZ80Mon can be loaded into memory using procedure outlined in Getting Started guide. Once ZZ80Mon is installed, the Bootstrap jumper should be set to T9-T10 for RAM bootstrap mode.
 ## ZZ80Mon commands
 
-ZZMon is a simple monitor with the following single-key commands. Except when noted, the commands may be entered in upper or lower cases. In the following description, command entered is in bold, the response is in `code section`
+ZZMon is a simple monitor with the following single-key commands. Except when noted, the commands may be entered in upper or lower cases. In the following description, command entered is in **bold**, the response is in `code section`
 
 **H**
 ```
@@ -39,7 +39,6 @@ Enter the 2 hexadecimal digits for the track number and 2 hex digits for the sec
 read RAMdisk track:0x00 sector:0x00 data not same as previous read
 
 1000 : 21 00 10 36 3E 23 36 40 23 36 D3 23 36 CD 23 36
-
 1010 : 16 23 36 F8 23 36 21 23 36 00 23 36 04 23 36 0E
 1020 : 23 36 C0 23 36 3E 23 36 01 23 36 D3 23 36 C5 23
 1030 : 36 7A 23 36 FE 23 36 FE 23 36 CA 23 36 00 23 36
