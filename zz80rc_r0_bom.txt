@@ -1,0 +1,26 @@
+	Bill of Material for ZZ80RC, rev 0
+
+  Item     Qty  References                              Value    		Source  
+-----------------------------------------------------------------------------------------------------
+     1       3  R2,R3,R8            		100 ohm, 1/8W  
+     2       1  C2            			1nF ceramic disk cap  
+     3       3  R1,R5,R7             		4.7K ohm, 1/8W  
+     4       6  C3,C4,C5,C6,C7,C8     		0.1uF bypass cap  
+     5       1  C1              		0.22F Super capacitor	Panasonic EECS0HD224H  
+     6       1  D1     				1N914 diode		jameco 36311  
+     7       1  U5        			24MHZ oscillator	Full can size  
+     8       1  D2            			1N5817 Schottky diode	jameco 177949  
+     9       1  U4         			DS1210 Nonvolatile ctrl	jameco 114198
+    10       1  U3         			1.8432MHZ oscillator	jameco 27879  
+    11       1  U7                 		74HC273       		jameco 45743  
+    12       1  U6        			MCP130-460DI/TO		jameco 1284957   
+    13       1  U1    				Zilog Z8028012VSC	utsource
+    14	     1	U1A				PLCC68SOCKET		jameco 71969  
+    15       1  P1         			40-pin right angle hdr  
+    16       1  J1      			Power Jack 2.1mm	jameco 101178  
+    17       1  U2         			AS6C4008-55PCN		Mouser 913-AS6C4008-55PCN  
+    18       2  R4,R6     			4.7K 8-pin SIP Bus	Jameco 1970367
+									Bourns 4308R-101-472LF   
+    19       1  S1       			push button SPST	Jameco 149948  
+    20	     1  Bootstrap jumers		3-pin header
+    21	     1  T10-T15				1x6 Header right angle female 	eBay
