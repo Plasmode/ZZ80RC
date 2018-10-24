@@ -41,7 +41,7 @@ Engineering Changes, ← no engineering changes so far.
 
 * UART Bootstrap software, LoadnGo.run, loads the 256-byte bootstrap first which, in turn, loads ZZ80Mon and transfer control to it. If TeraTerm is the terminal software, set the serial port transmission delay to 1 msec/line and check the 'Binary' box in 'Send file…' menu. The transmission delay and checked Binary box are necessary only for loading LoadnGo.run. All subsequent file loads are with zero transmission delay and Binary box unchecked.
 
-* SCMonitor is a sophisticated monitor developed by Steve Cousins. It has many features, among them a version of MS BASIC that runs well on ZZ80RC. This version of SCMonitor is compiled for Z280RC but works well in ZZ80RC.
+* [SCMonitor](SysSoftware/SCMonitor.hex) is a sophisticated monitor developed by [Steve Cousins](http://scc.me.uk/). It has many features, among them a version of MS BASIC that runs well on ZZ80RC. This version of SCMonitor is beta release for Z280RC but works well in ZZ80RC. 
 
 * ZZ80Mon is the bootstrap monitor for ZZ80RC. It has simple commands to load files, edit/display memory, display RAM disk, zero/fill memory, test memory, copy bootstrap to physical page 0, copy CP/M to RAM disk, and boot CP/M. The software is assembled using Zilog ZDS v3.68.
 
