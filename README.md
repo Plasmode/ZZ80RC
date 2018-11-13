@@ -39,15 +39,15 @@ Engineering Changes, ← no engineering changes so far.
 [Build log](Manuals/ZZ80RC_construction_log.md)
 ### Software
 
-* UART Bootstrap software, LoadnGo.run, loads the 256-byte bootstrap first which, in turn, loads ZZ80Mon and transfer control to it. If TeraTerm is the terminal software, set the serial port transmission delay to 1 msec/line and check the 'Binary' box in 'Send file…' menu. The transmission delay and checked Binary box are necessary only for loading LoadnGo.run. All subsequent file loads are with zero transmission delay and Binary box unchecked.
+* UART Bootstrap software, [LoadnGo.run](SysSoftware/loadngo.run), loads the 256-byte bootstrap first which, in turn, loads ZZ80Mon and transfer control to it. If TeraTerm is the terminal software, set the serial port transmission delay to 1 msec/line and check the 'Binary' box in 'Send file…' menu. The transmission delay and checked Binary box are necessary only for loading LoadnGo.run. All subsequent file loads are with zero transmission delay and Binary box unchecked.
 
 * [SCMonitor](SysSoftware/SCMonitor.hex) is a sophisticated monitor developed by [Steve Cousins](http://scc.me.uk/). It has many features, among them a version of MS BASIC that runs well on ZZ80RC. This version of SCMonitor is beta release for Z280RC but works well in ZZ80RC. 
 
-* ZZ80Mon is the bootstrap monitor for ZZ80RC. It has simple commands to load files, edit/display memory, display RAM disk, zero/fill memory, test memory, copy bootstrap to physical page 0, copy CP/M to RAM disk, and boot CP/M. The software is assembled using Zilog ZDS v3.68.
+* [ZZ80Mon](SysSoftware/ZZ80Mon.hex) is the bootstrap monitor for ZZ80RC. It has simple commands to load files, edit/display memory, display RAM disk, zero/fill memory, test memory, copy bootstrap to physical page 0, copy CP/M to RAM disk, and boot CP/M. The software is assembled using Zilog ZDS v3.68.
 
-* ZZ80CPM22 is CP/M2.2 executable tailored for ZZ80RC. It is loaded into 0xDC00-0xFFFF with ZZ80Mon. Use 'C2' command to copy it into RAM disk and use 'B2' command to boot into CP/M2.2. The software is assembled using Zilog ZDS v3.68.
+* [ZZ80CPM22](SysSoftware/ZZ80CPM22.hex) is CP/M2.2 executable tailored for ZZ80RC. It is loaded into 0xDC00-0xFFFF with ZZ80Mon. Use 'C2' command to copy it into RAM disk and use 'B2' command to boot into CP/M2.2. The software is assembled using Zilog ZDS v3.68.
 
-* CPM22DRI is system files for CP/M2.2. Use ZZ80Mon to load it into RAM disk A: It includes the XMODEM.COM file transfer program. CPM22DRI image is created using cpmtools.
+* [CPM22DRI](SysSoftware/CPM22DRI.HEX) is system files for CP/M2.2. Use ZZ80Mon to load it into RAM disk A: It includes the XMODEM.COM file transfer program. CPM22DRI image is created using cpmtools.
 ### Manuals
 
 * [Getting Started](Manuals/GettingStartedGuide.md) guide
