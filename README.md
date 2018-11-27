@@ -1,4 +1,4 @@
- # ZZ80RC, A Z280 Single-board Computer in Z80-Compatible Mode for RC2014
+# ZZ80RC, A Z280 Single-board Computer in Z80-Compatible Mode for RC2014
 ## Introduction
 
 ZZ80RC (Double-Z80 for RC2014) is a single-board Z280 computer configured to Z80-bus compatible mode. It has a RC2014-compatible connector and is designed to interface with RC2014 I/O modules. ZZ80RC is based on through-hole components and the same form factor as a standard RC2014 board (100mm x 50mm).
@@ -46,6 +46,7 @@ Engineering Changes, ← no engineering changes so far.
 * [ZZ80Mon](SysSoftware/ZZ80Mon.hex) is the bootstrap monitor for ZZ80RC. It has simple commands to load files, edit/display memory, display RAM disk, zero/fill memory, test memory, copy bootstrap to physical page 0, copy CP/M to RAM disk, and boot CP/M. The software is assembled using Zilog ZDS v3.68.  Here is source of ver 0.28 [ZZ80Mon](SysSoftware/ZZ80mon.asm)
 
 * [ZZ80CPM22](SysSoftware/ZZ80CPM22.hex) is CP/M2.2 executable tailored for ZZ80RC. It is loaded into 0xDC00-0xFFFF with ZZ80Mon. Use 'C2' command to copy it into RAM disk and use 'B2' command to boot into CP/M2.2. The software is assembled using Zilog ZDS v3.68. Here is the source of ver 1.1 of [ZZ80CPM22](SysSoftware/ZZ80CPM22.asm)
+* [ZZ80CPM22CF0x10](SysSoftware/CPM22allCF0x10.hex) is CP/M2.2 executable for ZZ80RC with an official RC2014 CF board strapped to I/O address 0x10-0x17.  It is loaded into 0xDC00-0xFFFF with ZZ80Mon. Use 'C2' command to copy it into RAM disk and use 'B2' command to boot into CP/M2.2. The software is assembled using Zilog ZDS v3.68. Here is the source of [ZZ80CPM22CF0x10](SysSoftware/CPM22allCF0x10.asm)
 
 * [CPM22DRI](SysSoftware/CPM22DRI.HEX) is system files for CP/M2.2. Use ZZ80Mon to load it into RAM disk A: It includes the XMODEM.COM file transfer program. CPM22DRI image is created using cpmtools.
 ### Manuals
