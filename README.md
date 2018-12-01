@@ -34,7 +34,9 @@ Gerber [photoplots](zz80rc_rev0.zip), the pc board was manufactured by Seeed Stu
 
 [Bill of Materials](zz80rc_r0_bom.txt)
 
-Engineering Changes, ← no engineering changes so far.
+Engineering Changes
+* Operating [ZZ80RC without DS1210](ZZ80RC_no_DS1210.md) and super capacitor
+* [Replacing super capacitor](ZZ80RC_CR1220.md) with CR1220 battery
 
 [Build log](Manuals/ZZ80RC_construction_log.md)
 ### Software
